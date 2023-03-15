@@ -1,33 +1,53 @@
-
-import java.util.Objects;
+package com.example.data;
 
 public class Estudiante {
-    public long documento;
-    public String nombre="Juan";
-    public String email;
-    public double promedio;
-    
-    public String traerNombre() {
-        return this.nombre;
+    private long documento;
+    private String nombre="Juan";
+    private String email;
+    private double promedio;
+
+    public long getDocumento() {
+        return documento;
     }
-    
+
+    public void setDocumento(long documento) {
+        this.documento = documento;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     public double getPromedio() {
-        return this.promedio;
+        return promedio;
     }
-    
-    public void cambiarEmail(String nuevoEmail) {
-        this.email=nuevoEmail;
-    }
-    
-    public void updateDatos(String nombre, String email) {
-        this.nombre=nombre;
-        this.email=email;
+
+    public void setPromedio(double promedio) {
+        this.promedio = promedio;
     }
 
     @Override
     public String toString() {
         return "Estudiante{" + "documento=" + documento + ", nombre=" + nombre + ", email=" + email + ", promedio=" + promedio + '}';
     }
+
+    
+
+    
+
+    
     
     
 

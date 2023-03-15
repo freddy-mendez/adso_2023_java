@@ -1,10 +1,12 @@
 package ejemplo;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class ColeccionesDatos {
 
     public static void main(String[] args) {
+        Scanner leer = new Scanner(System.in);
         ArrayList<String> datos = new ArrayList();
         datos.add("5");
         datos.add("Hola");
@@ -17,6 +19,13 @@ public class ColeccionesDatos {
         System.out.println("Tamaño:"+datos.size());
         datos.remove(0);
         System.out.println("Tamaño:"+datos.size());
+        
+        System.out.println("Digite le numero de personas");
+        int n = leer.nextInt();
+        
+        for (int i=0; i<n; i++) {
+            
+        }
     }
     
 }
