@@ -54,7 +54,11 @@ public class Inicio {
                     cursos.add(new Curso(codigo, nombre, creditos));
                     break;
                 case 4:
-                    for(Curso curso:cursos) {
+                    /*for(Curso curso:cursos) {
+                        System.out.println(""+curso);
+                    }*/
+                    for (int i=0; i<cursos.size(); i++) {
+                        Curso curso = cursos.get(i);
                         System.out.println(""+curso);
                     }
                     break;
