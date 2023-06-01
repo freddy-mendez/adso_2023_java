@@ -5,6 +5,7 @@
 package com.example.gui;
 
 import com.example.data.Vendedor;
+import com.example.gui.VentanaMenu;
 
 /**
  *
